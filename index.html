@@ -16,12 +16,12 @@
             <nav>
                 <ul>
                     <li><button class="botonCategoria"><i class="bi bi-arrow-right"></i>Todos los productos</button></li>
-                    <li><button class="botonCategoria"><i class="bi bi-arrow-right"></i>Faldas</button></li>
+                    <li><button class="botonCategoria"><i class="bi bi-arrow-right"></i>Polleras</button></li>
                     <li><button class="botonCategoria"><i class="bi bi-arrow-right"></i>Vestidos</button></li>
                     <li><button class="botonCategoria"><i class="bi bi-arrow-right"></i>Remeras</button></li>
                     <li><button class="botonCategoria"><i class="bi bi-arrow-right"></i>Pileteros</button></li>
                     <li>
-                         <a href="carrito.html" class="carrito-icono">
+                         <button class="carrito-icono">
                          <span class="icono-wrapper">
                          <i class="bi bi-cart"></i>
                         <span class="carrito-contador">0</span>
@@ -31,19 +31,30 @@
                     </li>
                 </ul>
             </nav>
+            <aside class="carrito-sidebar hidden">
+                    <h2 class="titulo-carrito">Tu carrito</h2>
+                    <div class="contenedor-carrito"></div>
+                    <div class="carrito-total">
+                        Total: <span id="total-carrito">$0</span>
+                    </div>
+                    <button class="cerrar-carrito">Cerrar Carrito</button>
+                    </aside>
+
              <p class="textoFooter">© <span>Ali Chirazi</span></p>
         </aside>
+        
         <button class="toggle-btn"><i class="bi bi-list"></i></button>
         <main class="main">
             <h2 class="titulo-principal">Todos los productos</h2>
             <div class="contenedor-productos">
               
-            </div>
+            </div>   
         </main>
 
 
     </div>    
     <script src="productos.js"></script>
+    <script src="carrito.js"></script>
     <script src="script.js"></script>
-</body>
+</body>    
 </html>
