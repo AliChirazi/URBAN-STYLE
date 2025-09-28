@@ -436,3 +436,72 @@ footer {
 .cerrar-carrito:hover {
   background: #b8860b;
 }
+.item-carrito {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  border: 1px solid #eee;
+  padding: 0.6rem;
+  border-radius: 8px;
+}
+
+.item-carrito img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* Contenedor de textos (titulo, cantidad, precio) */
+.info-carrito {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* ocupa todo el espacio posible */
+  min-width: 0; /* evita que empuje al tachito */
+}
+
+.titulo-producto-carrito {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* corta texto largo con "..." */
+}
+
+.cantidad-producto-carrito {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.precio-producto-carrito {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #d4af37;
+}
+
+.btn-eliminar {
+  background: transparent;
+  border: none;
+  color: #d4af37;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  width: 36px;   /* 👈 ancho fijo */
+  height: 36px;  /* 👈 alto fijo igual al ancho */
+  border-radius: 50%; /* ahora sí, círculo perfecto */
+  flex-shrink: 0;
+}
+
+.btn-eliminar:hover {
+  background: rgba(212, 175, 55, 0.15);
+  color: #b8860b;
+  transform: scale(1.1);
+  box-shadow: 0 0 6px rgba(0,0,0,0.25);
+}
